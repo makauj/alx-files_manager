@@ -1,5 +1,7 @@
 /* eslint-disable no-return-await */
 const { MongoClient } = require('mongodb');
+// eslint-disable-next-line import/no-unresolved
+require('dotenv').config();
 
 class DBClient {
   constructor() {
