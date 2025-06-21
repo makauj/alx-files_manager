@@ -4,7 +4,7 @@ const { MongoClient } = require('mongodb');
 class DBClient {
   constructor() {
     const host = process.env.DB_HOST || 'localhost';
-    const port = process.env.DB_PORT || '5432';
+    const port = process.env.DB_PORT || 27017;
     const dbUser = process.env.DB_DATABASE || 'file_manager';
 
     const uri = `mondodb://${dbUser}@${host}:${port}/file_manager`;
