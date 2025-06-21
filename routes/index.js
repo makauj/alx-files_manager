@@ -15,6 +15,8 @@ router.post('/users', UsersController.createUser);
 
 // File upload route
 router.post('/files', FilesController.postUpload);
+router.get('/files/:id', FilesController.getShow);
+router.get('/files', FilesController.getIndex);
 
 // Authentication routes
 router.get('/connect', AuthController.getConnect);
